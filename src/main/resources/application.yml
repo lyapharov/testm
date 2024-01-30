@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: ${DATASOURCE_URL:jdbc:hsqldb:mem:testdb}
+    username: sa
+    password:
+  sql:
+    init:
+      mode: always
